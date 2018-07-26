@@ -206,6 +206,9 @@ module.exports = {
                       },
                     },
                     require.resolve('less-loader'),
+                    {
+                      loader: 'px2rem-loader',
+                    }
                   ],
                 },
                 extractTextPluginOptions
