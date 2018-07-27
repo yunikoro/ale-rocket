@@ -1,9 +1,19 @@
 import React from 'react';
+import ContentBox from './ContentBox'
+
+import './Home.less'
 
 export default class Home extends React.Component {
     render() {
-        const { params: { id } } = this.props.match;
-        console.log(this.props);
-        return <h1>hello {id}</h1>;
+        return (
+            <ContentBox>
+                <div>
+                    <div className="bg-board" />
+                    <div className="footer-box">
+
+                    </div>
+                </div>
+            </ContentBox>
+        );
     }
 }

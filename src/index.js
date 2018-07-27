@@ -1,8 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter, Route, Switch, NavLink } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './index.less';
 import Home from './modules/Home'
+import TopTab from './modules/TopTab'
+import BlogList from './modules/BlogList'
 import registerServiceWorker from './registerServiceWorker';
 
 ReactDOM.render((
@@ -10,27 +12,13 @@ ReactDOM.render((
         <div>
             <div className="nav-bar">
                 <div className="link-box">
-                    <NavLink activeClassName="active" className="link" to="/home">
-                        <div className="text">
-                            首页
-                            <div className="line-box">
-                                <div className="under-line"/>
-                            </div>
-                        </div>
-                    </NavLink>
-                    <NavLink activeClassName="active" className="link" to="/cool">
-                        <div className="text">
-                            博客列表
-                            <div className="line-box">
-                                <div className="under-line"/>
-                            </div>
-                        </div>
-                    </NavLink>
+                    <TopTab exact to="/">首页</TopTab>
+                    <TopTab to="/cool">文章</TopTab>
                 </div>
             </div>
             <Switch>
                 <Route exact path="/" component={Home} />
-                <Route path="/home/:id" component={Home}/>
+                <Route path="/cool" component={BlogList} />
             </Switch>
         </div>
     </BrowserRouter>

@@ -208,9 +208,15 @@ module.exports = {
                         ],
                       },
                     },
-                    require.resolve('less-loader'),
                     {
                       loader: 'px2rem-loader',
+                      options: {
+                        remUnit: 90,
+                        remPrecision: 8
+                      }
+                    },
+                    {
+                      loader: 'less-loader'
                     }
                   ],
                 },

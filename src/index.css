@@ -4,41 +4,8 @@ body {
   font-family: sans-serif;
 }
 .nav-bar {
+  position: fixed;
+  width: 100%;
   height: 35px;
   background: #1E2532;
-}
-.link-box {
-  display: flex;
-  margin-left: 25%;
-  height: 100%;
-}
-.link-box .link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #FFF;
-  text-decoration: none;
-  padding: 10px 24px;
-  font-size: 10px;
-}
-.link-box .link:hover {
-  color: #4b81c4;
-}
-.link-box .link .text {
-  display: flex;
-  flex-direction: column;
-}
-.active {
-  background-color: #4b81c4;
-  color: #FFF !important;
-}
-.active .line-box {
-  margin-top: 2px;
-  display: flex;
-  justify-content: center;
-}
-.active .under-line {
-  width: 80%;
-  border-bottom: 2px solid #FFF;
-  /* no */
 }

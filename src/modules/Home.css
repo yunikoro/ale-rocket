@@ -1,0 +1,13 @@
+.bg-board {
+  background-image: url("../static/bg.jpg");
+  background-color: #333333;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: calc(74.93010252vw);
+  filter: blur(2px);
+  /* no */
+}
+.footer-box {
+  height: 10vh;
+  background-color: #333333;
+}

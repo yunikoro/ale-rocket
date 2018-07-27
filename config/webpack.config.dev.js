@@ -197,7 +197,7 @@ module.exports = {
               },
               {
                 loader: 'less-loader'
-              },
+              }
             ],
           },
           // "file" loader makes sure those assets get served by WebpackDevServer.
