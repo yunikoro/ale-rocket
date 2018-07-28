@@ -4,10 +4,73 @@
   background-size: contain;
   background-repeat: no-repeat;
   height: calc(74.93010252vw);
-  filter: blur(2px);
+}
+.big-tit-box {
+  display: flex;
+  flex-direction: column;
+}
+.big-title {
+  padding-top: 240px;
+  color: #FFFFFF;
+  font-size: 46px;
+  text-align: center;
+}
+.sub-title {
+  margin-top: 6px;
+  display: flex;
+  justify-content: center;
+  color: #FFFFFF;
+  font-size: 20px;
+}
+.sub-title .line-tit {
+  border-top: 1px double #FFFFFF;
+  /* no */
+  border-bottom: 1px double #FFFFFF;
   /* no */
 }
+.btn-line {
+  display: flex;
+  justify-content: center;
+}
 .footer-box {
-  height: 10vh;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
   background-color: #333333;
+}
+.footer-box .foot-line {
+  display: flex;
+  justify-content: center;
+}
+.wx-contact div {
+  font-size: 10px;
+  margin-top: 8px;
+  text-align: center;
+  color: #999999;
+}
+.wx-contact img {
+  width: 70px;
+  height: 70px;
+}
+.github {
+  margin-top: 10px;
+  width: 13px;
+  height: 13px;
+  background: url("../static/github-icon.png") no-repeat;
+  background-size: contain;
+}
+.owner {
+  margin-top: 10px;
+  color: #999999;
+}
+.icp {
+  display: flex;
+  color: #999999;
+}
+.icp .police {
+  width: 10px;
+  height: 10px;
+  margin-right: 3px;
+  background: url("../static/icp-icon.png") no-repeat;
+  background-size: contain;
 }
